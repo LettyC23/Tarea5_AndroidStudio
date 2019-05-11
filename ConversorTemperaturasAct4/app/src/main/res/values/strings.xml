@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ConversorTemperaturasAct4</string>
+    <string name="btn_centigrados">C</string>
+    <string name="btn_fahrenheit">F</string>
+    <string name="btn_kelvin">K</string>
+    <string name="btn_rankie">R</string>
+    <string name="txt_grados">A grados:</string>
+    <string name="txt_convertir">Convertir</string>
+    <string name="chb_centigrados">C</string>
+    <string name="chb_fahrenheit">F</string>
+    <string name="chb_kelvin">K</string>
+    <string name="chb_rankie">R</string>
+    <string name="txt_cen"></string>
+    <string name="txt_fahr"></string>
+    <string name="txt_kel"></string>
+    <string name="txt_ran"></string>
+</resources>

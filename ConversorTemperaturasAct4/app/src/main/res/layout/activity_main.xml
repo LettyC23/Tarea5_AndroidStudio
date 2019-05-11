@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioButton
+        android:id="@+id/rbtn_centigrados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:onClick="procesar"
+        android:text="@string/btn_centigrados"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt_convertir" />
+
+    <EditText
+        android:id="@+id/txt_convertir"
+        android:layout_width="280dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="18dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioButton
+        android:id="@+id/rbtn_fahrenheit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:onClick="procesar"
+        android:text="@string/btn_fahrenheit"
+        app:layout_constraintStart_toEndOf="@+id/rbtn_centigrados"
+        app:layout_constraintTop_toBottomOf="@+id/txt_convertir" />
+
+    <RadioButton
+        android:id="@+id/rbtn_kelvin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:onClick="procesar"
+        android:text="@string/btn_kelvin"
+        app:layout_constraintStart_toEndOf="@+id/rbtn_rankie"
+        app:layout_constraintTop_toBottomOf="@+id/txt_convertir" />
+
+    <RadioButton
+        android:id="@+id/rbtn_rankie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="12dp"
+        android:onClick="procesar"
+        android:text="@string/btn_rankie"
+        app:layout_constraintStart_toEndOf="@+id/rbtn_fahrenheit"
+        app:layout_constraintTop_toBottomOf="@+id/txt_convertir" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/txt_grados"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbtn_centigrados" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="38dp"
+        android:text="@string/txt_convertir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/chb_cen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:onClick="procesar"
+        android:text="@string/chb_centigrados"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <CheckBox
+        android:id="@+id/chb_fahr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:onClick="procesar"
+        android:text="@string/chb_fahrenheit"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chb_cen" />
+
+    <CheckBox
+        android:id="@+id/chb_kel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:onClick="procesar"
+        android:text="@string/chb_kelvin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chb_fahr" />
+
+    <CheckBox
+        android:id="@+id/chb_ran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:onClick="procesar"
+        android:text="@string/chb_rankie"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chb_kel" />
+
+    <EditText
+        android:id="@+id/txt_cent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="45dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:onClick="limpiar"
+        android:text="@string/txt_cen"
+        app:layout_constraintStart_toEndOf="@+id/chb_cen"
+        app:layout_constraintTop_toBottomOf="@+id/rbtn_fahrenheit" />
+
+    <EditText
+        android:id="@+id/txt_fahr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/txt_fahr"
+        app:layout_constraintStart_toEndOf="@+id/chb_fahr"
+        app:layout_constraintTop_toBottomOf="@+id/txt_cent" />
+
+    <EditText
+        android:id="@+id/txt_kel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/txt_kel"
+        app:layout_constraintStart_toEndOf="@+id/chb_kel"
+        app:layout_constraintTop_toBottomOf="@+id/txt_fahr" />
+
+    <EditText
+        android:id="@+id/txt_ran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/txt_ran"
+        app:layout_constraintStart_toEndOf="@+id/chb_ran"
+        app:layout_constraintTop_toBottomOf="@+id/txt_kel" />
+
+</android.support.constraint.ConstraintLayout>
